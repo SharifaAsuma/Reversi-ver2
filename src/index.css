@@ -1,0 +1,20 @@
+/* Tailwindの基本スタイル(リセットCSSなど)を読み込む */
+@tailwind base;
+/* Tailwindのコンポーネント用クラスを読み込む(現状は主に未使用) */
+@tailwind components;
+/* Tailwindのユーティリティクラス(text-xxx, bg-xxx など)を読み込む */
+@tailwind utilities;
+
+/* 石(ディスク)が裏返るときのアニメーション定義
+   Y軸を回転させることでコインが反転するような見た目を作る */
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg); /* 開始: 正面 */
+  }
+  50% {
+    transform: rotateY(90deg); /* 中間: 真横(裏返る途中) */
+  }
+  100% {
+    transform: rotateY(0deg); /* 終了: 正面に戻る(色は別途Reactの状態で切り替え) */
+  }
+}
