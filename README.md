@@ -1,4 +1,4 @@
-# リバーシ (Othello) — JavaScript版
+# リバーシ (Reversi) — JavaScript版 ver2
 
 React + JavaScript(TypeScriptなし) + Tailwind CSS で作られたリバーシアプリ。
 もとはTypeScriptで書かれていたものを、型情報を取り除いてJavaScriptに書き換えました。
